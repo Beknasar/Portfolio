@@ -1,0 +1,169 @@
+.container-fluid {
+   	padding: 2em 15%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    /*1em = 16px = 100%*/
+    color: #00BF63;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Caveat Brush', cursive;
+    position: relative;
+}
+
+/* Navbar */
+.navbar-toggler {
+    border-color: transparent;
+    color: transparent;
+}
+
+
+.navbar-toggler-icon {
+    border-radius: 50%;
+    background-color: #00BF63;
+    padding: 5px;
+    height: 4.5em;
+    width: 4.5em;
+    background-size: 75%;
+}
+
+/*.navbar-collapse {*/
+/*    background: #D9F3F4;*/
+/*    border-radius: 5%;*/
+/*}*/
+
+.navbar-toggler-icon:hover {
+    background-color: #205732;
+}
+
+.top-container{
+    background-color: #D9F3F4;
+    position: relative;
+    /*z-index: 99999;*/
+}
+
+.top-container-text {
+    margin: 20% auto 15% 15%;
+}
+
+.top_leaves {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    /*z-index: -1;*/
+    background-size: 100% 100%;
+}
+
+.bottom-left_leaves {
+    position: absolute;
+    display: inline-block;
+    width: 34%;
+    height: auto;
+    left: -3%;
+    /*z-index: -1;*/
+    bottom: 0;
+    background-size: 100% 100%;
+}
+.bottom-right_leaves {
+    position: absolute;
+    display: inline-block;
+    width: 21%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    /*z-index: -1;*/
+    background-size: 100% 100%;
+
+}
+/* Carousel*/
+#skillSlider {
+    position: relative;
+    z-index: 1;
+}
+.card-content {
+    font-size: 13px;
+}
+
+.card-content a{
+    font-size: 55px;
+    padding: 5px 15px;
+    color: #00BF63;
+    border-radius: 50%;
+    border: solid 2px #00BF63;
+}
+
+.carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+/*Portfolio*/
+.title {
+    color: #00BF63;
+    text-align: center;
+}
+
+.portfolio-block {
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.btn-card {
+    font-size: 12px;
+    font-weight: 800;
+    width: 65%;
+}
+
+.card-body {
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.card-text {
+    color: #4b4b4b;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-link {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #00BF63;
+}
+
+
+/* Project show */
+.projects-img {
+    border-radius: 8px;
+    width: 70%;
+}
+
+.home-button{
+    font-size: 40px;
+    padding: 5px 15px;
+    color: #00BF63;
+}
+
+.home-button:hover {
+    color: #205732;
+}
