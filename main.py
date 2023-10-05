@@ -31,6 +31,11 @@ class Project(db.Model):
 db.create_all()
 projects = db.session.query(Project).all()
 
+# Test
+test_project = Project(title='Test', description='Test description', img_url="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg")
+db.session.add(test_project)
+db.session.commit()
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
