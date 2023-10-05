@@ -4,10 +4,11 @@ from flask_sqlalchemy import SQLAlchemy
 import smtplib
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get("FLASK_KEY")
 app.app_context().push()
 
 # #CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///my-projects.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -62,4 +63,4 @@ def show_project(project_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
