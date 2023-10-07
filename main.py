@@ -63,4 +63,4 @@ def show_project(project_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
